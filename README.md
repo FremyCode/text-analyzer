@@ -9,3 +9,7 @@ To run the project:
 5. Open up "localhost:3000" on your browser
 
 The project should now be visible in your browser and ready to use!
+
+To-do list:
+
+#Refactor components and make the code look prettier.

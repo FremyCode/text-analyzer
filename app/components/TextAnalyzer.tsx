@@ -33,9 +33,12 @@ export const TextAnalyzer = () => {
     const words = text.trim().split(/\s+/);
     let longestWord = "";
 
-    words.forEach((word) => {
-      if (word.length > longestWord.length) {
-        longestWord = word;
+    words.forEach(word => {
+      // Remove punctuation characters from each word
+      const cleanWord = word.replace(/[.,!?]/g, '');
+  
+      if (cleanWord.length > longestWord.length) {
+        longestWord = cleanWord;
       }
     });
 
